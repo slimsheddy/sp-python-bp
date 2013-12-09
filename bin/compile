@@ -120,6 +120,7 @@ if [ ! "$SKIP_INSTALL" ]; then
     puts-warn "Aborting.  More info: https://devcenter.heroku.com/articles/python-support"
     exit 1
   fi
+  puts-step "Done downloading ($PYTHON_VERSION) from http://envy-versions.s3.amazonaws.com/$PYTHON_VERSION.tar.bz2 )"
   mv python .heroku/python
 
   # Record for future reference.
